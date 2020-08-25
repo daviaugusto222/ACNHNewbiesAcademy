@@ -1,0 +1,28 @@
+[
+    {
+        "idSideQuest": 1,
+        "title": "Pegue um dos grandes",
+        "description": "Olá! Estou precisando da sua ajuda! Tenho alguns itens para fazer e tenho certeza que você pode me ajudar a conseguir os materiais necessários. Vou colocar aqui em baixo a lista do que estou precisando!",
+        "done": false,
+        "category": "fishing",
+        "NPC": {
+            "name": "Isabelle",
+            "icon": "Isabelle"
+        },
+        "animals": [5,9,13,45,33],
+        "items": [3,6,8,39]
+    },
+    {
+        "idSideQuest": 2,
+        "title": "Ajude o CJ!",
+        "description": "Olá! Estou precisando da sua ajuda! Tenho alguns itens para fazer e tenho certeza que você pode me ajudar a conseguir os materiais necessários. Vou colocar aqui em baixo a lista do que estou precisando!",
+        "done": true,
+        "category": "crafting",
+        "NPC": {
+            "name": "CJ",
+            "icon": "CJ"
+        },
+        "animals": [8,6],
+        "items": []
+    }
+]

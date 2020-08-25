@@ -1,0 +1,800 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B0722E324EB1741005CAF57 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0722E224EB1741005CAF57 /* URLExtension.swift */; };
+		4B07BFF924ED488B005E3564 /* MockSideQuests.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B07BFF824ED488B005E3564 /* MockSideQuests.json */; };
+		4B07BFFB24ED4A95005E3564 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B07BFFA24ED4A95005E3564 /* Category.swift */; };
+		4B07BFFD24ED4F1E005E3564 /* SideQuestRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B07BFFC24ED4F1E005E3564 /* SideQuestRepository.swift */; };
+		4B07C00024ED6A5F005E3564 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B07BFFF24ED6A5F005E3564 /* FileHelper.swift */; };
+		4B07C00224EEC076005E3564 /* ItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B07C00124EEC076005E3564 /* ItemDetailsViewController.swift */; };
+		4B25644C24EAF3AA00D43AF3 /* DescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B25644B24EAF3AA00D43AF3 /* DescriptionTableViewCell.swift */; };
+		4B25644E24EAF7C800D43AF3 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B25644D24EAF7C800D43AF3 /* Animal.swift */; };
+		4B25645024EAFA9A00D43AF3 /* AnimalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B25644F24EAFA9A00D43AF3 /* AnimalRepository.swift */; };
+		4B25645224EB007600D43AF3 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B25645124EB007600D43AF3 /* ItemTableViewCell.swift */; };
+		4B53AD9824E41DFA00DC015B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B53AD9724E41DFA00DC015B /* AppDelegate.swift */; };
+		4B53AD9A24E41DFA00DC015B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B53AD9924E41DFA00DC015B /* SceneDelegate.swift */; };
+		4B53ADA124E41DFD00DC015B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B53ADA024E41DFD00DC015B /* Assets.xcassets */; };
+		4B53ADA424E41DFE00DC015B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B53ADA224E41DFE00DC015B /* LaunchScreen.storyboard */; };
+		4B53ADAF24E41DFE00DC015B /* ACNHNewbiesAcademyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B53ADAE24E41DFE00DC015B /* ACNHNewbiesAcademyTests.swift */; };
+		4B53ADBA24E41DFE00DC015B /* ACNHNewbiesAcademyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B53ADB924E41DFE00DC015B /* ACNHNewbiesAcademyUITests.swift */; };
+		4B53ADCB24E46D0A00DC015B /* QuestView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B53ADCA24E46D0A00DC015B /* QuestView.storyboard */; };
+		4B53ADD924E4C8F700DC015B /* QuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B53ADD824E4C8F700DC015B /* QuestViewController.swift */; };
+		4B53ADE324E5413000DC015B /* DailyGoalCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B53ADE224E5413000DC015B /* DailyGoalCollectionViewCell.xib */; };
+		4B53ADE524E541D400DC015B /* DailyGoalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B53ADE424E541D400DC015B /* DailyGoalCollectionViewCell.swift */; };
+		4B53ADEB24E5485B00DC015B /* SideQuestDetailsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B53ADEA24E5485B00DC015B /* SideQuestDetailsView.storyboard */; };
+		4B53ADF124E5517800DC015B /* ItemDetailsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B53ADF024E5517800DC015B /* ItemDetailsView.storyboard */; };
+		4B53ADF324E5522300DC015B /* CongratulationsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B53ADF224E5522300DC015B /* CongratulationsView.storyboard */; };
+		4B53ADF624E563C200DC015B /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4B53ADF524E563C200DC015B /* .swiftlint.yml */; };
+		4B53ADF824E567BC00DC015B /* SideQuest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B53ADF724E567BC00DC015B /* SideQuest.swift */; };
+		4B53ADFA24E5687100DC015B /* NPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B53ADF924E5687100DC015B /* NPC.swift */; };
+		4B53ADFC24E5694400DC015B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B53ADFB24E5694400DC015B /* Item.swift */; };
+		4B53ADFE24E56B6E00DC015B /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B53ADFD24E56B6E00DC015B /* Goal.swift */; };
+		4B53AE1A24E6E9B000DC015B /* SideQuestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B53AE1924E6E9B000DC015B /* SideQuestTableViewCell.swift */; };
+		4B53AE1C24E6E9E300DC015B /* SideQuestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B53AE1B24E6E9E300DC015B /* SideQuestTableViewCell.xib */; };
+		4B53AE1F24E6F12D00DC015B /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B53AE1E24E6F12D00DC015B /* UIImageExtension.swift */; };
+		4B53AE2124E7151E00DC015B /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B53AE2024E7151E00DC015B /* ItemTableViewCell.xib */; };
+		4B53AE2324E7155C00DC015B /* DescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B53AE2224E7155C00DC015B /* DescriptionTableViewCell.xib */; };
+		4B53AE2624E71E3900DC015B /* GoalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B53AE2524E71E3900DC015B /* GoalTableViewCell.xib */; };
+		4B53AE2824E71EC600DC015B /* GoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B53AE2724E71EC600DC015B /* GoalTableViewCell.swift */; };
+		4BB4DCCC24F1EB8300E5DAA9 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB4DCCB24F1EB8300E5DAA9 /* StringExtension.swift */; };
+		4BB6E2C424EAAB3E006A48BD /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB6E2C324EAAB3E006A48BD /* HTTP.swift */; };
+		4BB6E2C624EAAB69006A48BD /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB6E2C524EAAB69006A48BD /* Router.swift */; };
+		4BB6E2C824EAAB82006A48BD /* ServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB6E2C724EAAB82006A48BD /* ServiceAPI.swift */; };
+		4BB6E2CF24EAB817006A48BD /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB6E2CE24EAB817006A48BD /* Font.swift */; };
+		4BB6E2D124EACF4D006A48BD /* SideQuestDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB6E2D024EACF4D006A48BD /* SideQuestDetailsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B53ADAB24E41DFE00DC015B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B53AD8C24E41DFA00DC015B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B53AD9324E41DFA00DC015B;
+			remoteInfo = ACNHNewbiesAcademy;
+		};
+		4B53ADB624E41DFE00DC015B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B53AD8C24E41DFA00DC015B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B53AD9324E41DFA00DC015B;
+			remoteInfo = ACNHNewbiesAcademy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4B0722E224EB1741005CAF57 /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
+		4B07BFF824ED488B005E3564 /* MockSideQuests.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockSideQuests.json; sourceTree = "<group>"; };
+		4B07BFFA24ED4A95005E3564 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		4B07BFFC24ED4F1E005E3564 /* SideQuestRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideQuestRepository.swift; sourceTree = "<group>"; };
+		4B07BFFF24ED6A5F005E3564 /* FileHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
+		4B07C00124EEC076005E3564 /* ItemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsViewController.swift; sourceTree = "<group>"; };
+		4B25644B24EAF3AA00D43AF3 /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		4B25644D24EAF7C800D43AF3 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		4B25644F24EAFA9A00D43AF3 /* AnimalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalRepository.swift; sourceTree = "<group>"; };
+		4B25645124EB007600D43AF3 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		4B53AD9424E41DFA00DC015B /* ACNH Newbie's Academy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ACNH Newbie's Academy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B53AD9724E41DFA00DC015B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4B53AD9924E41DFA00DC015B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4B53ADA024E41DFD00DC015B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B53ADA324E41DFE00DC015B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4B53ADA524E41DFE00DC015B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B53ADAA24E41DFE00DC015B /* ACNHNewbiesAcademyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ACNHNewbiesAcademyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B53ADAE24E41DFE00DC015B /* ACNHNewbiesAcademyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACNHNewbiesAcademyTests.swift; sourceTree = "<group>"; };
+		4B53ADB024E41DFE00DC015B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B53ADB524E41DFE00DC015B /* ACNHNewbiesAcademyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ACNHNewbiesAcademyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B53ADB924E41DFE00DC015B /* ACNHNewbiesAcademyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACNHNewbiesAcademyUITests.swift; sourceTree = "<group>"; };
+		4B53ADBB24E41DFE00DC015B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B53ADCA24E46D0A00DC015B /* QuestView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuestView.storyboard; sourceTree = "<group>"; };
+		4B53ADD824E4C8F700DC015B /* QuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestViewController.swift; sourceTree = "<group>"; };
+		4B53ADE224E5413000DC015B /* DailyGoalCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyGoalCollectionViewCell.xib; sourceTree = "<group>"; };
+		4B53ADE424E541D400DC015B /* DailyGoalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoalCollectionViewCell.swift; sourceTree = "<group>"; };
+		4B53ADEA24E5485B00DC015B /* SideQuestDetailsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SideQuestDetailsView.storyboard; sourceTree = "<group>"; };
+		4B53ADF024E5517800DC015B /* ItemDetailsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ItemDetailsView.storyboard; sourceTree = "<group>"; };
+		4B53ADF224E5522300DC015B /* CongratulationsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CongratulationsView.storyboard; sourceTree = "<group>"; };
+		4B53ADF524E563C200DC015B /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		4B53ADF724E567BC00DC015B /* SideQuest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideQuest.swift; sourceTree = "<group>"; };
+		4B53ADF924E5687100DC015B /* NPC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPC.swift; sourceTree = "<group>"; };
+		4B53ADFB24E5694400DC015B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		4B53ADFD24E56B6E00DC015B /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
+		4B53AE1924E6E9B000DC015B /* SideQuestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideQuestTableViewCell.swift; sourceTree = "<group>"; };
+		4B53AE1B24E6E9E300DC015B /* SideQuestTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideQuestTableViewCell.xib; sourceTree = "<group>"; };
+		4B53AE1E24E6F12D00DC015B /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		4B53AE2024E7151E00DC015B /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
+		4B53AE2224E7155C00DC015B /* DescriptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescriptionTableViewCell.xib; sourceTree = "<group>"; };
+		4B53AE2524E71E3900DC015B /* GoalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoalTableViewCell.xib; sourceTree = "<group>"; };
+		4B53AE2724E71EC600DC015B /* GoalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTableViewCell.swift; sourceTree = "<group>"; };
+		4BB4DCCB24F1EB8300E5DAA9 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		4BB6E2C324EAAB3E006A48BD /* HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
+		4BB6E2C524EAAB69006A48BD /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		4BB6E2C724EAAB82006A48BD /* ServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAPI.swift; sourceTree = "<group>"; };
+		4BB6E2CE24EAB817006A48BD /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		4BB6E2D024EACF4D006A48BD /* SideQuestDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideQuestDetailsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B53AD9124E41DFA00DC015B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B53ADA724E41DFE00DC015B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B53ADB224E41DFE00DC015B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B0722E724EBF70E005CAF57 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4B53AE1E24E6F12D00DC015B /* UIImageExtension.swift */,
+				4B0722E224EB1741005CAF57 /* URLExtension.swift */,
+				4BB4DCCB24F1EB8300E5DAA9 /* StringExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4B07BFFE24ED6A49005E3564 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4B07BFFF24ED6A5F005E3564 /* FileHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4B53AD8B24E41DFA00DC015B = {
+			isa = PBXGroup;
+			children = (
+				4B53ADF524E563C200DC015B /* .swiftlint.yml */,
+				4B53AD9624E41DFA00DC015B /* ACNHNewbiesAcademy */,
+				4B53ADAD24E41DFE00DC015B /* ACNHNewbiesAcademyTests */,
+				4B53ADB824E41DFE00DC015B /* ACNHNewbiesAcademyUITests */,
+				4B53AD9524E41DFA00DC015B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B53AD9524E41DFA00DC015B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B53AD9424E41DFA00DC015B /* ACNH Newbie's Academy.app */,
+				4B53ADAA24E41DFE00DC015B /* ACNHNewbiesAcademyTests.xctest */,
+				4B53ADB524E41DFE00DC015B /* ACNHNewbiesAcademyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B53AD9624E41DFA00DC015B /* ACNHNewbiesAcademy */ = {
+			isa = PBXGroup;
+			children = (
+				4B07BFFE24ED6A49005E3564 /* Helpers */,
+				4B0722E724EBF70E005CAF57 /* Extensions */,
+				4B53AE1D24E6F10A00DC015B /* Service */,
+				4BB6E2C924EAAB97006A48BD /* Repository */,
+				4B53ADC924E46BC900DC015B /* Model */,
+				4B53ADC824E46BC300DC015B /* Controller */,
+				4B53ADC724E46BA800DC015B /* View */,
+				4B53AD9724E41DFA00DC015B /* AppDelegate.swift */,
+				4B53AD9924E41DFA00DC015B /* SceneDelegate.swift */,
+				4B53ADA024E41DFD00DC015B /* Assets.xcassets */,
+				4B53ADA224E41DFE00DC015B /* LaunchScreen.storyboard */,
+				4B53ADA524E41DFE00DC015B /* Info.plist */,
+			);
+			path = ACNHNewbiesAcademy;
+			sourceTree = "<group>";
+		};
+		4B53ADAD24E41DFE00DC015B /* ACNHNewbiesAcademyTests */ = {
+			isa = PBXGroup;
+			children = (
+				4B53ADAE24E41DFE00DC015B /* ACNHNewbiesAcademyTests.swift */,
+				4B53ADB024E41DFE00DC015B /* Info.plist */,
+			);
+			path = ACNHNewbiesAcademyTests;
+			sourceTree = "<group>";
+		};
+		4B53ADB824E41DFE00DC015B /* ACNHNewbiesAcademyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4B53ADB924E41DFE00DC015B /* ACNHNewbiesAcademyUITests.swift */,
+				4B53ADBB24E41DFE00DC015B /* Info.plist */,
+			);
+			path = ACNHNewbiesAcademyUITests;
+			sourceTree = "<group>";
+		};
+		4B53ADC724E46BA800DC015B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B53ADCA24E46D0A00DC015B /* QuestView.storyboard */,
+				4B53ADEA24E5485B00DC015B /* SideQuestDetailsView.storyboard */,
+				4B53ADF024E5517800DC015B /* ItemDetailsView.storyboard */,
+				4B53ADF224E5522300DC015B /* CongratulationsView.storyboard */,
+				4B53AE2424E7158E00DC015B /* Xibs */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4B53ADC824E46BC300DC015B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4B53ADD824E4C8F700DC015B /* QuestViewController.swift */,
+				4BB6E2D024EACF4D006A48BD /* SideQuestDetailsViewController.swift */,
+				4B07C00124EEC076005E3564 /* ItemDetailsViewController.swift */,
+				4B53ADE424E541D400DC015B /* DailyGoalCollectionViewCell.swift */,
+				4B53AE2724E71EC600DC015B /* GoalTableViewCell.swift */,
+				4B53AE1924E6E9B000DC015B /* SideQuestTableViewCell.swift */,
+				4B25644B24EAF3AA00D43AF3 /* DescriptionTableViewCell.swift */,
+				4B25645124EB007600D43AF3 /* ItemTableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4B53ADC924E46BC900DC015B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B53ADF724E567BC00DC015B /* SideQuest.swift */,
+				4B53ADF924E5687100DC015B /* NPC.swift */,
+				4B53ADFD24E56B6E00DC015B /* Goal.swift */,
+				4B53ADFB24E5694400DC015B /* Item.swift */,
+				4B25644D24EAF7C800D43AF3 /* Animal.swift */,
+				4BB6E2CE24EAB817006A48BD /* Font.swift */,
+				4B07BFFA24ED4A95005E3564 /* Category.swift */,
+				4B07BFF824ED488B005E3564 /* MockSideQuests.json */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4B53AE1D24E6F10A00DC015B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4BB6E2C324EAAB3E006A48BD /* HTTP.swift */,
+				4BB6E2C524EAAB69006A48BD /* Router.swift */,
+				4BB6E2C724EAAB82006A48BD /* ServiceAPI.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4B53AE2424E7158E00DC015B /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				4B53AE2524E71E3900DC015B /* GoalTableViewCell.xib */,
+				4B53ADE224E5413000DC015B /* DailyGoalCollectionViewCell.xib */,
+				4B53AE1B24E6E9E300DC015B /* SideQuestTableViewCell.xib */,
+				4B53AE2224E7155C00DC015B /* DescriptionTableViewCell.xib */,
+				4B53AE2024E7151E00DC015B /* ItemTableViewCell.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		4BB6E2C924EAAB97006A48BD /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				4B25644F24EAFA9A00D43AF3 /* AnimalRepository.swift */,
+				4B07BFFC24ED4F1E005E3564 /* SideQuestRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B53AD9324E41DFA00DC015B /* ACNHNewbiesAcademy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B53ADBE24E41DFE00DC015B /* Build configuration list for PBXNativeTarget "ACNHNewbiesAcademy" */;
+			buildPhases = (
+				4B53AD9024E41DFA00DC015B /* Sources */,
+				4B53AD9124E41DFA00DC015B /* Frameworks */,
+				4B53AD9224E41DFA00DC015B /* Resources */,
+				4B53ADF424E5617000DC015B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ACNHNewbiesAcademy;
+			productName = ACNHNewbiesAcademy;
+			productReference = 4B53AD9424E41DFA00DC015B /* ACNH Newbie's Academy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4B53ADA924E41DFE00DC015B /* ACNHNewbiesAcademyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B53ADC124E41DFE00DC015B /* Build configuration list for PBXNativeTarget "ACNHNewbiesAcademyTests" */;
+			buildPhases = (
+				4B53ADA624E41DFE00DC015B /* Sources */,
+				4B53ADA724E41DFE00DC015B /* Frameworks */,
+				4B53ADA824E41DFE00DC015B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B53ADAC24E41DFE00DC015B /* PBXTargetDependency */,
+			);
+			name = ACNHNewbiesAcademyTests;
+			productName = ACNHNewbiesAcademyTests;
+			productReference = 4B53ADAA24E41DFE00DC015B /* ACNHNewbiesAcademyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4B53ADB424E41DFE00DC015B /* ACNHNewbiesAcademyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B53ADC424E41DFE00DC015B /* Build configuration list for PBXNativeTarget "ACNHNewbiesAcademyUITests" */;
+			buildPhases = (
+				4B53ADB124E41DFE00DC015B /* Sources */,
+				4B53ADB224E41DFE00DC015B /* Frameworks */,
+				4B53ADB324E41DFE00DC015B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B53ADB724E41DFE00DC015B /* PBXTargetDependency */,
+			);
+			name = ACNHNewbiesAcademyUITests;
+			productName = ACNHNewbiesAcademyUITests;
+			productReference = 4B53ADB524E41DFE00DC015B /* ACNHNewbiesAcademyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B53AD8C24E41DFA00DC015B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "David Augusto";
+				TargetAttributes = {
+					4B53AD9324E41DFA00DC015B = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					4B53ADA924E41DFE00DC015B = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 4B53AD9324E41DFA00DC015B;
+					};
+					4B53ADB424E41DFE00DC015B = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 4B53AD9324E41DFA00DC015B;
+					};
+				};
+			};
+			buildConfigurationList = 4B53AD8F24E41DFA00DC015B /* Build configuration list for PBXProject "ACNHNewbiesAcademy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B53AD8B24E41DFA00DC015B;
+			productRefGroup = 4B53AD9524E41DFA00DC015B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B53AD9324E41DFA00DC015B /* ACNHNewbiesAcademy */,
+				4B53ADA924E41DFE00DC015B /* ACNHNewbiesAcademyTests */,
+				4B53ADB424E41DFE00DC015B /* ACNHNewbiesAcademyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B53AD9224E41DFA00DC015B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B53ADF624E563C200DC015B /* .swiftlint.yml in Resources */,
+				4B53AE2624E71E3900DC015B /* GoalTableViewCell.xib in Resources */,
+				4B53AE1C24E6E9E300DC015B /* SideQuestTableViewCell.xib in Resources */,
+				4B53AE2124E7151E00DC015B /* ItemTableViewCell.xib in Resources */,
+				4B53ADCB24E46D0A00DC015B /* QuestView.storyboard in Resources */,
+				4B53ADA424E41DFE00DC015B /* LaunchScreen.storyboard in Resources */,
+				4B53ADA124E41DFD00DC015B /* Assets.xcassets in Resources */,
+				4B07BFF924ED488B005E3564 /* MockSideQuests.json in Resources */,
+				4B53ADE324E5413000DC015B /* DailyGoalCollectionViewCell.xib in Resources */,
+				4B53ADF324E5522300DC015B /* CongratulationsView.storyboard in Resources */,
+				4B53AE2324E7155C00DC015B /* DescriptionTableViewCell.xib in Resources */,
+				4B53ADF124E5517800DC015B /* ItemDetailsView.storyboard in Resources */,
+				4B53ADEB24E5485B00DC015B /* SideQuestDetailsView.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B53ADA824E41DFE00DC015B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B53ADB324E41DFE00DC015B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B53ADF424E5617000DC015B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B53AD9024E41DFA00DC015B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BB6E2C824EAAB82006A48BD /* ServiceAPI.swift in Sources */,
+				4B53ADFC24E5694400DC015B /* Item.swift in Sources */,
+				4B53ADF824E567BC00DC015B /* SideQuest.swift in Sources */,
+				4B53ADE524E541D400DC015B /* DailyGoalCollectionViewCell.swift in Sources */,
+				4B53AE1F24E6F12D00DC015B /* UIImageExtension.swift in Sources */,
+				4B53ADFE24E56B6E00DC015B /* Goal.swift in Sources */,
+				4B53AE2824E71EC600DC015B /* GoalTableViewCell.swift in Sources */,
+				4B25645024EAFA9A00D43AF3 /* AnimalRepository.swift in Sources */,
+				4B0722E324EB1741005CAF57 /* URLExtension.swift in Sources */,
+				4B53ADFA24E5687100DC015B /* NPC.swift in Sources */,
+				4B25644E24EAF7C800D43AF3 /* Animal.swift in Sources */,
+				4B07C00024ED6A5F005E3564 /* FileHelper.swift in Sources */,
+				4B07C00224EEC076005E3564 /* ItemDetailsViewController.swift in Sources */,
+				4B53AD9824E41DFA00DC015B /* AppDelegate.swift in Sources */,
+				4B53AD9A24E41DFA00DC015B /* SceneDelegate.swift in Sources */,
+				4B25645224EB007600D43AF3 /* ItemTableViewCell.swift in Sources */,
+				4BB6E2C424EAAB3E006A48BD /* HTTP.swift in Sources */,
+				4BB6E2CF24EAB817006A48BD /* Font.swift in Sources */,
+				4B53ADD924E4C8F700DC015B /* QuestViewController.swift in Sources */,
+				4B25644C24EAF3AA00D43AF3 /* DescriptionTableViewCell.swift in Sources */,
+				4B53AE1A24E6E9B000DC015B /* SideQuestTableViewCell.swift in Sources */,
+				4B07BFFD24ED4F1E005E3564 /* SideQuestRepository.swift in Sources */,
+				4BB6E2D124EACF4D006A48BD /* SideQuestDetailsViewController.swift in Sources */,
+				4BB6E2C624EAAB69006A48BD /* Router.swift in Sources */,
+				4BB4DCCC24F1EB8300E5DAA9 /* StringExtension.swift in Sources */,
+				4B07BFFB24ED4A95005E3564 /* Category.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B53ADA624E41DFE00DC015B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B53ADAF24E41DFE00DC015B /* ACNHNewbiesAcademyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B53ADB124E41DFE00DC015B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B53ADBA24E41DFE00DC015B /* ACNHNewbiesAcademyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B53ADAC24E41DFE00DC015B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B53AD9324E41DFA00DC015B /* ACNHNewbiesAcademy */;
+			targetProxy = 4B53ADAB24E41DFE00DC015B /* PBXContainerItemProxy */;
+		};
+		4B53ADB724E41DFE00DC015B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B53AD9324E41DFA00DC015B /* ACNHNewbiesAcademy */;
+			targetProxy = 4B53ADB624E41DFE00DC015B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4B53ADA224E41DFE00DC015B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B53ADA324E41DFE00DC015B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B53ADBC24E41DFE00DC015B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4B53ADBD24E41DFE00DC015B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B53ADBF24E41DFE00DC015B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DB9XDYKBL8;
+				INFOPLIST_FILE = ACNHNewbiesAcademy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Academy.ACNHNewbiesAcademy;
+				PRODUCT_NAME = "ACNH Newbie's Academy";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B53ADC024E41DFE00DC015B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DB9XDYKBL8;
+				INFOPLIST_FILE = ACNHNewbiesAcademy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Academy.ACNHNewbiesAcademy;
+				PRODUCT_NAME = "ACNH Newbie's Academy";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4B53ADC224E41DFE00DC015B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ACNHNewbiesAcademyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Academy.ACNHNewbiesAcademyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ACNHNewbiesAcademy.app/ACNHNewbiesAcademy";
+			};
+			name = Debug;
+		};
+		4B53ADC324E41DFE00DC015B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ACNHNewbiesAcademyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Academy.ACNHNewbiesAcademyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ACNHNewbiesAcademy.app/ACNHNewbiesAcademy";
+			};
+			name = Release;
+		};
+		4B53ADC524E41DFE00DC015B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ACNHNewbiesAcademyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Academy.ACNHNewbiesAcademyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ACNHNewbiesAcademy;
+			};
+			name = Debug;
+		};
+		4B53ADC624E41DFE00DC015B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ACNHNewbiesAcademyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Academy.ACNHNewbiesAcademyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ACNHNewbiesAcademy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B53AD8F24E41DFA00DC015B /* Build configuration list for PBXProject "ACNHNewbiesAcademy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B53ADBC24E41DFE00DC015B /* Debug */,
+				4B53ADBD24E41DFE00DC015B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B53ADBE24E41DFE00DC015B /* Build configuration list for PBXNativeTarget "ACNHNewbiesAcademy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B53ADBF24E41DFE00DC015B /* Debug */,
+				4B53ADC024E41DFE00DC015B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B53ADC124E41DFE00DC015B /* Build configuration list for PBXNativeTarget "ACNHNewbiesAcademyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B53ADC224E41DFE00DC015B /* Debug */,
+				4B53ADC324E41DFE00DC015B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B53ADC424E41DFE00DC015B /* Build configuration list for PBXNativeTarget "ACNHNewbiesAcademyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B53ADC524E41DFE00DC015B /* Debug */,
+				4B53ADC624E41DFE00DC015B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B53AD8C24E41DFA00DC015B /* Project object */;
+}

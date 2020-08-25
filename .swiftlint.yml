@@ -1,0 +1,10 @@
+disabled_rules:
+ - trailing_whitespace
+
+analyzer_rules:
+ - explicit_self
+
+line_length: 240
+
+force_cast:
+    severity: warning

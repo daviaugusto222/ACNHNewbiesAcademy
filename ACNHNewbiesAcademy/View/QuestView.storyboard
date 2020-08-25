@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lkw-e6-BI4">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Objetivos Diários-->
+        <scene sceneID="kVc-0c-mbY">
+            <objects>
+                <viewController title="Objetivos Diários" id="h4v-HS-oAe" customClass="QuestViewController" customModule="ACNH_Newbie_s_Academy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0fa-Ui-Yt3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="QGb-Ry-1JU">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="h4v-HS-oAe" id="09a-AW-LHL"/>
+                                    <outlet property="delegate" destination="h4v-HS-oAe" id="S22-jR-lhn"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" name="Backgraund"/>
+                        <constraints>
+                            <constraint firstItem="Jz6-xE-QNO" firstAttribute="bottom" secondItem="QGb-Ry-1JU" secondAttribute="bottom" id="BQ0-EL-DXy"/>
+                            <constraint firstItem="QGb-Ry-1JU" firstAttribute="leading" secondItem="Jz6-xE-QNO" secondAttribute="leading" id="XGC-fF-6zC"/>
+                            <constraint firstItem="QGb-Ry-1JU" firstAttribute="top" secondItem="Jz6-xE-QNO" secondAttribute="top" id="Xlw-Gs-8QX"/>
+                            <constraint firstItem="Jz6-xE-QNO" firstAttribute="trailing" secondItem="QGb-Ry-1JU" secondAttribute="trailing" id="vdf-es-6Ld"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Jz6-xE-QNO"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Terça, 25 Ago" largeTitleDisplayMode="always" id="dmj-zc-Ovj"/>
+                    <connections>
+                        <outlet property="sideQuestTableView" destination="QGb-Ry-1JU" id="4Ra-8q-qVc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kec-qY-Bx5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1000.0000000000001" y="126.5625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="quG-76-nxF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lkw-e6-BI4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" shadowImage="Path" id="TCS-xE-d6P">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="Ligth Yellow"/>
+                        <color key="barTintColor" name="Ligth Yellow"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="h4v-HS-oAe" kind="relationship" relationship="rootViewController" id="Vyv-k4-BD2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v47-ez-ng0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="89.855072463768124" y="126.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Path" width="152" height="28"/>
+        <namedColor name="Backgraund">
+            <color red="0.75294117647058822" green="0.80392156862745101" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Ligth Yellow">
+            <color red="0.9137254901960784" green="0.90196078431372551" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

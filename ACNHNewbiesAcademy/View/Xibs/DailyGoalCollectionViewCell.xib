@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="DailyGoalCollectionViewCell" id="Ovz-xe-T56" customClass="DailyGoalCollectionViewCell" customModule="ACNHNewbiesAcademy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="52" height="66"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfL-K7-2W6">
+                    <rect key="frame" x="0.0" y="0.0" width="52" height="66"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GoalNotDone" translatesAutoresizingMaskIntoConstraints="NO" id="fnE-ix-hDi">
+                            <rect key="frame" x="0.0" y="0.0" width="52" height="66"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="DIY" translatesAutoresizingMaskIntoConstraints="NO" id="Ae5-Uq-inL">
+                            <rect key="frame" x="5" y="5" width="42" height="44"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10/10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DfB-jf-lYQ">
+                            <rect key="frame" x="0.0" y="50.5" width="52" height="13.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Ae5-Uq-inL" firstAttribute="leading" secondItem="dfL-K7-2W6" secondAttribute="leading" constant="5" id="8gF-Vb-JoT"/>
+                        <constraint firstAttribute="trailing" secondItem="Ae5-Uq-inL" secondAttribute="trailing" constant="5" id="DFA-x3-ANR"/>
+                        <constraint firstItem="DfB-jf-lYQ" firstAttribute="leading" secondItem="dfL-K7-2W6" secondAttribute="leading" id="Oew-Mf-flO"/>
+                        <constraint firstAttribute="bottom" secondItem="DfB-jf-lYQ" secondAttribute="bottom" constant="2" id="QqR-Te-db4"/>
+                        <constraint firstItem="Ae5-Uq-inL" firstAttribute="top" secondItem="dfL-K7-2W6" secondAttribute="top" constant="5" id="UxI-kD-Oh8"/>
+                        <constraint firstAttribute="trailing" secondItem="DfB-jf-lYQ" secondAttribute="trailing" id="eyu-8n-ltA"/>
+                        <constraint firstItem="fnE-ix-hDi" firstAttribute="top" secondItem="dfL-K7-2W6" secondAttribute="top" id="ftY-fr-2wX"/>
+                        <constraint firstAttribute="bottom" secondItem="fnE-ix-hDi" secondAttribute="bottom" id="r2G-9v-qly"/>
+                        <constraint firstItem="fnE-ix-hDi" firstAttribute="leading" secondItem="dfL-K7-2W6" secondAttribute="leading" id="sMi-QP-uLf"/>
+                        <constraint firstAttribute="trailing" secondItem="fnE-ix-hDi" secondAttribute="trailing" id="zxW-L2-Jb8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="dfL-K7-2W6" secondAttribute="bottom" id="71J-Tx-Alg"/>
+                <constraint firstItem="dfL-K7-2W6" firstAttribute="top" secondItem="Ovz-xe-T56" secondAttribute="top" id="DBY-yR-idI"/>
+                <constraint firstItem="dfL-K7-2W6" firstAttribute="leading" secondItem="vIb-oP-mpl" secondAttribute="leading" id="GOn-ml-QrP"/>
+                <constraint firstAttribute="trailing" secondItem="dfL-K7-2W6" secondAttribute="trailing" id="ri9-0e-f3p"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vIb-oP-mpl"/>
+            <connections>
+                <outlet property="backgraundImage" destination="fnE-ix-hDi" id="rWn-ey-oht"/>
+                <outlet property="itemImage" destination="Ae5-Uq-inL" id="Nbi-Td-gVI"/>
+                <outlet property="progressLabel" destination="DfB-jf-lYQ" id="iU3-8I-5kj"/>
+            </connections>
+            <point key="canvasLocation" x="144.92753623188406" y="152.67857142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="DIY" width="44" height="44"/>
+        <image name="GoalNotDone" width="52" height="66"/>
+    </resources>
+</document>

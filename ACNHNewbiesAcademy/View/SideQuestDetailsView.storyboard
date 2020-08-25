@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w9w-ey-Lwn">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Side Quest Details View Controller-->
+        <scene sceneID="MWw-oS-nAh">
+            <objects>
+                <viewController storyboardIdentifier="SideQuestDetailsView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="w9w-ey-Lwn" customClass="SideQuestDetailsViewController" customModule="ACNHNewbiesAcademy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EuK-yv-DWT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="ysm-eB-nGk">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" name="Ligth Blue"/>
+                        <constraints>
+                            <constraint firstItem="ysm-eB-nGk" firstAttribute="top" secondItem="seD-rH-PJ1" secondAttribute="top" id="33S-xN-6WP"/>
+                            <constraint firstItem="ysm-eB-nGk" firstAttribute="leading" secondItem="seD-rH-PJ1" secondAttribute="leading" id="Xpo-31-Dvt"/>
+                            <constraint firstItem="seD-rH-PJ1" firstAttribute="trailing" secondItem="ysm-eB-nGk" secondAttribute="trailing" id="nYf-IW-AmX"/>
+                            <constraint firstItem="seD-rH-PJ1" firstAttribute="bottom" secondItem="ysm-eB-nGk" secondAttribute="bottom" id="soT-9O-60g"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="seD-rH-PJ1"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="ysm-eB-nGk" id="EEv-IW-xeU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xPO-Il-nMX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-52" y="116"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Ligth Blue">
+            <color red="0.90196078431372551" green="0.94117647058823528" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GoalCollectionViewController" customModule="ACNH_Newbie_s_Academy" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="GoalTableViewCell" id="k6h-eS-TrC" customClass="GoalTableViewCell" customModule="ACNH_Newbie_s_Academy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="544" height="231"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yey-X1-VHO">
+                    <rect key="frame" x="16" y="5" width="512" height="221"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="hhk-h6-C3o">
+                            <rect key="frame" x="0.0" y="0.0" width="512" height="221"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="12" minimumInteritemSpacing="12" id="22o-Sw-hGy">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="12" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" name="Ligth Blue"/>
+                    <constraints>
+                        <constraint firstItem="hhk-h6-C3o" firstAttribute="top" secondItem="Yey-X1-VHO" secondAttribute="top" id="B3H-eB-RUH"/>
+                        <constraint firstAttribute="trailing" secondItem="hhk-h6-C3o" secondAttribute="trailing" id="ao9-V9-KXf"/>
+                        <constraint firstItem="hhk-h6-C3o" firstAttribute="leading" secondItem="Yey-X1-VHO" secondAttribute="leading" id="uBW-dj-u2U"/>
+                        <constraint firstAttribute="bottom" secondItem="hhk-h6-C3o" secondAttribute="bottom" id="wtD-fQ-ID0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Yey-X1-VHO" firstAttribute="leading" secondItem="k6h-eS-TrC" secondAttribute="leading" constant="16" id="AB6-dX-UBM"/>
+                <constraint firstAttribute="trailing" secondItem="Yey-X1-VHO" secondAttribute="trailing" constant="16" id="PCz-uZ-Z30"/>
+                <constraint firstAttribute="bottom" secondItem="Yey-X1-VHO" secondAttribute="bottom" constant="5" id="a5e-q0-ctg"/>
+                <constraint firstItem="Yey-X1-VHO" firstAttribute="top" secondItem="k6h-eS-TrC" secondAttribute="top" constant="5" id="rCK-Sf-734"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectionView" destination="hhk-h6-C3o" id="ZdV-YM-anB"/>
+                <outlet property="wrapperView" destination="Yey-X1-VHO" id="aKW-c1-8yP"/>
+            </connections>
+            <point key="canvasLocation" x="217.39130434782609" y="177.12053571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Ligth Blue">
+            <color red="0.90196078431372551" green="0.94117647058823528" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
